@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.RegisterController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <children>
+        <Label layoutX="262.0" layoutY="14.0" text="Register">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="65.0" text="First Name:" />
+        <TextField fx:id="firstNameField" layoutX="149.0" layoutY="62.0" prefHeight="32.0" prefWidth="358.0" promptText="Enter your first name" />
+        <Label layoutX="39.0" layoutY="113.0" text="Last Name:" />
+        <TextField fx:id="lastNameField" layoutX="149.0" layoutY="109.0" prefHeight="32.0" prefWidth="358.0" promptText="Enter your last name" />
+        <Label layoutX="38.0" layoutY="167.0" text="Email:" />
+        <TextField fx:id="emailField" layoutX="149.0" layoutY="163.0" prefHeight="32.0" prefWidth="358.0" promptText="Enter your email" />
+        <Label layoutX="38.0" layoutY="218.0" text="Password:" />
+        <PasswordField fx:id="passwordField" layoutX="149.0" layoutY="214.0" prefHeight="32.0" prefWidth="358.0" promptText="Enter your password" />
+        <Label layoutX="12.0" layoutY="270.0" text="Confirm Password:" />
+        <PasswordField fx:id="confirmPasswordField" layoutX="149.0" layoutY="267.0" prefHeight="32.0" prefWidth="358.0" promptText="Confirm your password" />
+        <CheckBox fx:id="rememberMeCheck" layoutX="32.0" layoutY="316.0" mnemonicParsing="false" text="Remember me" />
+        <Button fx:id="registerButton" layoutX="246.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleCreateAccount" text="Register" />
+    </children>
+</AnchorPane>

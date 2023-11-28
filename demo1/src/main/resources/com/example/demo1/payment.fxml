@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" prefHeight="382.0" prefWidth="453.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LoginController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <Label fx:id="lblPaymentMethod" text="Payment Method" />
+
+    <ComboBox fx:id="cbPaymentMethod">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Готівка" />
+                <String fx:value="Картка monobank" />
+                <String fx:value="Картка іншого банку" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+      
+          <Label fx:id="lblInfo" layoutX="58.0" layoutY="35.0" text="Оберіть спосіб оплати для розрахунку, коли " />
+
+          <Button fx:id="btnNext" layoutX="172.0" layoutY="100.0" onAction="#change" text="Next" />
+         <Label layoutX="117.0" layoutY="60.0" prefHeight="25.0" prefWidth="211.0" text="кур'єр привезе замовлення" />
+      </children></AnchorPane>
+</VBox>

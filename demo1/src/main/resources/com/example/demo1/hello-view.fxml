@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LoginController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #F0F0F0;"> <!-- Set a light gray background -->
+            <children>
+                <ImageView fx:id="Food" fitHeight="169.0" fitWidth="261.0" layoutX="34.0" layoutY="83.0" onMouseClicked="#handleImageClick">
+                    <image>
+                        <Image url="@/myOne.jpg" />
+                    </image>
+                </ImageView>
+
+                <VBox alignment="CENTER" layoutX="38.0" layoutY="292.0" prefHeight="57.0" prefWidth="286.0" spacing="5">
+                    <Text text="Deliver Favourite Food" wrappingWidth="140" />
+                </VBox> <!-- Centered VBox -->
+                 <Text fill="Green" layoutX="104.0" layoutY="285.0" text="OlegFood" wrappingWidth="138.7080078125">
+                     <font>
+                         <Font size="30.0" /> <!-- Increased font size -->
+                     </font>
+                 </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

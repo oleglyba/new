@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Order">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+       <Label text="Find Your Favorite Food" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+             <TextField fx:id="foodField" layoutY="14.0" prefHeight="33.0" prefWidth="349.0" promptText="What do you want to order?" />
+             <Button layoutX="383.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="96.0" text="Add" />
+             <Button layoutX="380.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleRemove" prefHeight="40.0" prefWidth="102.0" text="Remove Selected" />
+         </children>
+      </AnchorPane>
+       <HBox>
+          <children>
+              <Label text="Nearest Restaurant: " />
+              <Label fx:id="restoLabel" />
+          </children>
+       </HBox>
+       <HBox>
+          <children>
+              <Label text="Type: " />
+              <Label fx:id="typeLabel" />
+          </children>
+       </HBox>
+       <HBox>
+          <children>
+              <Label text="Time: " />
+              <Label fx:id="timeLabel" />
+          </children>
+       </HBox>
+       <HBox>
+          <children>
+              <Label text="Popular Menu: " />
+              <Label fx:id="menuLabel" />
+          </children>
+       </HBox>
+       <Button onAction="#handleSearch" prefHeight="48.0" prefWidth="145.0" text="Find Your Favorite Food" />
+       <ListView fx:id="orderListView" prefHeight="200.0" prefWidth="335.0">
+           <VBox.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </VBox.margin>
+       </ListView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+             <Button layoutX="198.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleOrder" prefHeight="33.0" prefWidth="81.0" text="Order" />
+         </children>
+      </AnchorPane>
+       <AnchorPane>
+
+    </AnchorPane>
+   </children>
+</VBox>

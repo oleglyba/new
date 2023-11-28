@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="522.0" prefWidth="436.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LoginController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Login To Your Account">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <TextField fx:id="emailField" prefHeight="54.0" prefWidth="432.0" promptText="Email" />
+    <PasswordField fx:id="passwordField" prefHeight="54.0" prefWidth="432.0" promptText="Password" />
+
+    <HBox spacing="10">
+        <AnchorPane prefHeight="141.0" prefWidth="432.0">
+            <children>
+
+                <Button fx:id="loginButton" layoutX="48.0" layoutY="14.0" onAction="#handleLoginButtonAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Login" />
+
+                <Hyperlink fx:id="handleForgotPasswordButtonAction" layoutX="23.0" layoutY="105.0" onAction="#handleForgotPasswordButtonAction" style="-fx-text-fill: #2196F3;" text="Forgot Your Password?" />
+            </children>
+        </AnchorPane>
+    </HBox>
+</VBox>
